@@ -1,0 +1,302 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: url('background74.jpg');
+}
+
+a {
+  color: #e66e0d;
+}
+
+
+
+  /* ---------- Header ---------- */
+
+
+
+#header {
+  width: 1450px;
+  padding: 0px 10px 0 10px;
+  height: 90px;
+  margin: 0px 0px 0px 100px;
+  position: fixed;
+  background-color: grey;
+}
+
+#header h1 {
+  font-size: 600;
+  letter-spacing: 1px;
+  float: left;
+  margin: 25px 0px 0px 65px;
+}
+
+#header h1 a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 100;
+}
+
+#menu {
+position: absolute;
+right: 800px;
+  }
+  
+#menu ul li {
+float: left;
+display: inline;
+  }
+  
+#menu ul li a {
+text-decoration: none;
+color: #101115;
+text-transform: uppercase;
+font-weight: 500;
+letter-spacing: 1px;
+display: block;
+padding: 20px 40px 30px 40px;
+  }
+  
+#header h2, h3  {
+  font-size: 125%;
+  letter-spacing: 1px;
+  float: right;
+  margin: 15px 30px 0px 0px;
+}
+
+#header h3{
+  position: absolute;
+  margin: 45px 0px 0px 1290px;
+}
+#header h2 a, h3 a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 100;
+}
+
+
+
+/* ---------- Content ---------- */
+
+
+
+#content {
+  width: 1160px;
+  margin: auto;
+  padding: 150px 0px 0px 250px;
+}
+
+.info-content {
+  width: 300px;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 70px 30px 0px;
+  float: left;
+  }
+  
+  .info-content h4 {
+  margin-top: 0;
+  margin-left: 0;
+  font-size: 170%;
+  font-weight: 400;
+  color: #27292a;
+  margin-bottom: 18px;   
+  }
+  
+  .info-content p {
+    font-size: 100%;
+    color: #37393a;
+    line-height: 160%;
+    }
+  
+  .info-reg {
+      width: 960px;
+      height: 100px;
+      margin-top: 150px;
+      border: 6px double gray;
+      background-color: rgb(58, 58, 58);
+    }
+  
+  .info-reg p{
+      font-size: 130%;
+      color: white;
+      line-height: 160%; 
+      text-align: center;
+      margin-top: 35px;
+    }
+  
+  
+  .info-acc {
+    border-top: 1px solid gray;
+    position: relative;
+    width: 960px;
+    height: 100px;
+    margin-top: 150px;
+    padding-top: 10px;
+    font-size: 100%;
+    color: #37393a;
+  }
+
+  .info-acc label {
+    font-size: 110%;
+    line-height: 200%;
+  }
+
+  .info-acc h5{
+    font-size: 120%;
+    font-weight: 500;
+  }
+  .button{
+    appearance: none;
+      border: 0;
+      border-radius: 10px;
+      background: rgb(47, 47, 49);
+      color: #fff;
+      padding: 8px 8px;
+      margin-top: 10px;
+      font-size: 20px;
+      cursor: pointer;
+  }
+
+  
+  /* ---------- Side-menu ---------- */
+
+
+
+  .hidden-menu {
+      display: block;
+      position: fixed;
+      list-style:none;
+      padding: 70px 0px 0px 0px;
+      margin: 0;
+      box-sizing: border-box;
+      width: 300px;
+      background-color: #eee;
+      height: 100%;
+      top: 0;
+      left: -300px;
+      transition: left .2s;
+      z-index: 2;
+      -webkit-transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+    }
+
+    .main {
+      font-weight: 600;
+      font-size: 150%;
+      padding: 50px 50px 50px 70px;
+      list-style: none;
+    }
+
+  .hidden-menu ul li {
+      display: inline;
+      float: left;
+      list-style: none;
+      text-decoration: none;
+    color: #101115;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-top: 10px;
+  }
+  
+  .side-menu ul.hidden-menu li a {
+      text-decoration: none;
+    color: #101115;
+  }
+    
+    .hidden-menu-ticker {
+      display: none;
+    }
+    
+    .btn-menu {
+      color: #fff;
+      background-color: grey;
+      padding: 7px;
+      position: fixed;
+      top: 5px;
+      left: 5px;
+      cursor: pointer;
+      transition: left .23s;
+      z-index: 3;
+      width: 25px;
+      -webkit-transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+    }
+    .btn-menu span {
+      display: block;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px 0 0;
+      transition: all .1s linear .23s;
+      position: relative;
+    }
+    .btn-menu span.first {
+      margin-top: 0;
+    }
+    
+    .hidden-menu-ticker:checked ~ .btn-menu {
+      left: 260px;
+    }
+    .hidden-menu-ticker:checked ~ .hidden-menu {
+      left: 0;
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu span.first {
+      -webkit-transform: rotate(45deg);
+      top: 8px;
+      
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu span.second {
+      opacity: 0;
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu span.third {
+      -webkit-transform: rotate(-45deg);
+      top: -8px;    
+    }
+
+
+
+    /* ---------- Form of log ---------- */
+
+
+
+    #formlog {
+      padding: 0 40 0 40;
+      width: 300px;
+      height: 350px;
+      margin: 15% 0 0 35%;
+      border: 6px double gray;
+      background-color: rgb(192, 190, 190);
+    }
+
+    #formlog form input, #formlog input[type=text], #formlog input[type=password], #formlog input[type=submit] {
+      background: #fbfbfb;
+      font-size: 18px;
+      line-height: 1;
+      width: 100%;
+      padding: 3px;
+      margin: 0 6px 5px 0;
+      outline: none;
+      order: 1px solid #d9d9d9;
+      cursor: pointer;
+    }
+
+    #formlog input[type=submit]{
+      height: 40px;
+    }
+
+    #vhod{
+      padding: 0 20 0 20;
+      width: 250px;
+      height: 100px;
+      margin: 20% 0 0 40%;
+      border: 6px double gray;
+      background-color: #d9d9d9;
+    }
+
+    #vhod p{
+      text-align: center;
+      font-size: 18px;
+    }
+
+
+
+/* ---------- Diagramm ---------- */
+
+
